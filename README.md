@@ -20,7 +20,7 @@ Good only for single firebase project and default instance creation.
 		- google-services_release
 		- GoogleService-Info_release
 ```
-[](../media/Screen%20Shot%202020-07-07%20at%2012.16.43%20AM.png?raw=true)
+[alternative](../media/Screen%20Shot%202020-07-07%20at%2012.16.43%20AM.png?raw=true)
 ```
 3. Assets/FirebaseProject/*
 	- Debug
@@ -30,4 +30,4 @@ Good only for single firebase project and default instance creation.
 	- Current Project
 		- for showing current google services information
 ```
-[](../media/Screen%20Shot%202020-07-07%20at%2012.17.44%20AM.png?raw=true)
+[alternative](../media/Screen%20Shot%202020-07-07%20at%2012.17.44%20AM.png?raw=true)
