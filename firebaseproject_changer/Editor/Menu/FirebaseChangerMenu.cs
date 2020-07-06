@@ -1,3 +1,4 @@
+using System.IO;
 using FreCre.FirebaseProjectChanger;
 using UnityEditor;
 using UnityEngine;
@@ -26,6 +27,9 @@ namespace DefaultNamespace
             androidServices.ReplaceGoogleServices();
             iosServices.ReplaceGoogleServices();
             
+            Debug.Log("Set Debug Json File : " + Path.Combine(Application.dataPath, ANDROID_JSON_FILE_DEBUG));
+            Debug.Log("Set Debug Ios File : " + Path.Combine(Application.dataPath, IOS_PLIST_FILE_DEBUG));
+            
             AssetDatabase.Refresh();
         }
 
@@ -38,6 +42,9 @@ namespace DefaultNamespace
             
             androidServices.ReplaceGoogleServices();
             iosServices.ReplaceGoogleServices();
+            
+            Debug.Log("Set Release Json File : " + Path.Combine(Application.dataPath, ANDROID_JSON_FILE_RELEASE));
+            Debug.Log("Set Release Ios File : " + Path.Combine(Application.dataPath, IOS_PLIST_FILE_RELEASE));
             
             AssetDatabase.Refresh();
         }
