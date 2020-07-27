@@ -1,8 +1,9 @@
 {
-    "name": "FreCre.FirebaseProjectChanger.Editor",
+    "name": "FreCre.FirebaseProjectManager",
     "references": [],
     "includePlatforms": [
-        "Editor"
+        "Android",
+        "iOS"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

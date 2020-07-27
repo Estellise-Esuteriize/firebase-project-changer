@@ -1,11 +1,12 @@
+using System;
 using System.IO;
-using FreCre.FirebaseProjectChanger;
+using Packages.FirebaseProjectManager.Project_Manager.Editor.Core;
 using UnityEditor;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace Packages.FirebaseProjectManager.Project_Manager.Editor.Menu
 {
-    public class FirebaseChangerMenu
+    public class FirebaseProjectManagerMenu
     {
 
         private const string ANDROID_JSON = "google-services.json";
@@ -21,6 +22,8 @@ namespace DefaultNamespace
         [MenuItem("Assets/FirebaseProject/Debug")]
         public static void SetDebug()
         {
+            ThrowIfEditorPlaying();
+            
             var androidServices = new GoogleServicesChanger(ANDROID_JSON, ANDROID_JSON_FILE_DEBUG);
             var iosServices = new GoogleServicesChanger(IOS_PLIST, IOS_PLIST_FILE_DEBUG);
             
@@ -37,6 +40,8 @@ namespace DefaultNamespace
         [MenuItem("Assets/FirebaseProject/Release")]
         public static void SetRelease()
         {
+            ThrowIfEditorPlaying();
+            
             var androidServices = new GoogleServicesChanger(ANDROID_JSON, ANDROID_JSON_FILE_RELEASE);
             var iosServices = new GoogleServicesChanger(IOS_PLIST, IOS_PLIST_FILE_RELEASE);
             
@@ -53,7 +58,6 @@ namespace DefaultNamespace
         [MenuItem("Assets/FirebaseProject/CurrentProject")]
         public static void CurrentFirebaseProject()
         {
-            
             // json
             var androidServices = new GoogleServicesChanger(ANDROID_JSON, ANDROID_JSON_FILE_RELEASE);
             var androidJson = androidServices.GetCurrentAndroidServices();
@@ -73,6 +77,14 @@ namespace DefaultNamespace
             Debug.Log("IOS Project Id : " + iosPlist.PROJECT_ID);
             Debug.Log("IOS Database Url : " + iosPlist.DATABASE_URL);
             Debug.Log("IOS Storage Bucket : " + iosPlist.STORAGE_BUCKET);
+        }
+
+        private static void ThrowIfEditorPlaying()
+        {
+            if (Application.isPlaying)
+            {
+                throw new OperationCanceledException("Unity editor is currently playing.");
+            }
         }
 
     }
