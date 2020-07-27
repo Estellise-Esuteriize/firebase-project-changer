@@ -1,4 +1,4 @@
-namespace FreCre.FirebaseProjectChanger.JsonModel
+namespace Packages.FirebaseProjectManager.Project_Manager.Editor.Core.JsonModel
 {
     public class GoogleServicesIosModel
     {

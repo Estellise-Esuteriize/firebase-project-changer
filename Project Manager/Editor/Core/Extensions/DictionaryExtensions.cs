@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Dynamic;
 
-namespace FreCre.FirebaseProjectChanger.Extensions
+namespace Packages.FirebaseProjectManager.Project_Manager.Editor.Core.Extensions
 {
     public static class DictionaryExtensions
     {

@@ -2,11 +2,11 @@
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
-using FreCre.FirebaseProjectChanger.Extensions;
-using FreCre.FirebaseProjectChanger.JsonModel;
+using Packages.FirebaseProjectManager.Project_Manager.Editor.Core.Extensions;
+using Packages.FirebaseProjectManager.Project_Manager.Editor.Core.JsonModel;
 using UnityEngine;
 
-namespace FreCre.FirebaseProjectChanger
+namespace Packages.FirebaseProjectManager.Project_Manager.Editor.Core
 {
     public class GoogleServicesChanger
     {

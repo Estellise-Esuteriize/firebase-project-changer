@@ -1,12 +1,10 @@
 {
-  "name" : "com.frecre.firebaseproject_changer",
-  "version" : "0.1.0",
-  "displayName" : "Firebase Project Manager",
-  "description" : "Simple firebase project manager",
-  "unity" : "2019.3",
-  "unityRelease" : "5f1",
-  "dependencies": {
-  },
+  "name": "com.frecre.firebaseprojectmanager",
+  "version": "0.1.0",
+  "displayName": "Firebase Project Manager",
+  "description": "Simple firebase project manager",
+  "unity": "2017.1",
+  "unityRelease": "1f1",
   "author": {
     "name": "Estellise",
     "email": "estellise.caballero@gmail.com",
