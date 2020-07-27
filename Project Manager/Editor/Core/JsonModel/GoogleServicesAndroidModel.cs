@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FreCre.FirebaseProjectChanger.JsonModel
+namespace Packages.FirebaseProjectManager.Project_Manager.Editor.Core.JsonModel
 {
     [Serializable]
     public class GoogleServicesAndroidModel
