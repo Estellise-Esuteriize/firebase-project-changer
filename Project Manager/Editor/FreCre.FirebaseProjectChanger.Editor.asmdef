@@ -1,5 +1,5 @@
 {
-    "name": "FreCre.FirebaseProjectChanger.Test",
+    "name": "FreCre.FirebaseProjectManager.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
