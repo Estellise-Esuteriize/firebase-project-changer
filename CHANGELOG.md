@@ -7,7 +7,7 @@
 ## 0.2.0
 - Only update firebase project if editor is not playing
 - Update packages, folders, namespace from changer -> manager
-- Update change log texts.
+- Update change log texts...
 
 #Contributors
 - Estellise Yukihime

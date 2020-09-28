@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "displayName": "Firebase Project Manager",
   "description": "Simple firebase project manager",
-  "unity": "2017.1",
-  "unityRelease": "1f1",
+  "unity": "2019.3",
+  "unityRelease": "5f1",
   "author": {
     "name": "Estellise",
     "email": "estellise.caballero@gmail.com",
