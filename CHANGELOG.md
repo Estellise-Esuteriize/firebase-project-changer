@@ -9,5 +9,9 @@
 - Update packages, folders, namespace from changer -> manager
 - Update change log texts...
 
+## 0.2.1
+- Automatically uses release firebase on every build
+- Release firebase [json, plist] will use if Development build is uncheck.
+
 #Contributors
 - Estellise Yukihime
