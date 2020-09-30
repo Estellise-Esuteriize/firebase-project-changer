@@ -1,6 +1,6 @@
 {
   "name": "com.frecre.firebaseprojectmanager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Firebase Project Manager",
   "description": "Simple firebase project manager",
   "unity": "2019.3",
